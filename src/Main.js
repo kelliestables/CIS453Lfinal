@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./Home";
 import Menu from "./Menu";
+import OrderForm from "./OrderForm";
 import Contact from "./Contact";
  
 class Main extends Component {
@@ -19,11 +20,13 @@ class Main extends Component {
           <ul className="header">
             <li><NavLink exact to="/">About Us</NavLink></li>
             <li><NavLink to="/Menu">Menu</NavLink></li>
+            <li><NavLink to="/OrderForm">Order Form</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/Menu" component={Menu}/>
+            <Route path="/OrderForm" component={Menu}/>
             <Route path="/contact" component={Contact}/> 
           </div>
         </div>
